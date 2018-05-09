@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="leaflet0.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- Topbar -->
+    <div class="topbar">
+      <i class="fa fa-shopping-basket" aria-hidden="true" style="font-size:24px;color:#f2f2f2;position:relative;bottom:12px;left:1160px" ></i>
+          <div id="title">
+            <h4> PHILADELPHIA FARMERS MARKET </h4>
+          </div> <!--title-->
+    </div> <!--topbar-->
+
+    <!-- Sidebar -->
+    <div class="sidebar1">
+      <div id="intro">
+        <h4> FIND A FARMERS MARKET NEAR YOU! </h4>
+      </div> <!--intro-->
+      <div class="checkbox">
+        <input type="checkbox" id="cbox-input1" valued="first_checkbox" disabled>
+        <label id="checkbox-label" for="cbox-input1"> All Year Round </label>
+        <br>
+        <input type="checkbox" id="cbox-input2" value="second_checkbox" disabled>
+        <label id="checkbox-label" for="cbox-input2"> Food Trust </label>
+        <br>
+        <input type="checkbox" id="cbox-input3" value="third_checkbox" disabled>
+        <label id="checkbox-label" for="cbox-input3"> Cooking Demonstration </label>
+      </div> <!--checkbox-->
+      <br>
+      <button class="btn"> GO! </button>
+    </div> <!--sidebar1-->
+    <div class="sidebar2">
+      <div id="info">
+        <h4> MARKET INFO </h4>
+      </div> <!--info-->
+      <div class="info">
+        <p><i> Click on the circle to see more information. </i></p>
+        <br>
+      </div> <!--info-->
+      <div class="label">
+        <p><b>Market Name: </b><span class="name"></span></p>
+        <p><b>Address: </b><span class="add"></span></p>
+        <p><b>Bus: </b><span class="bus"></span></p>
+        <p><b>Months: </b><span class="months"></span></p>
+        <p><b>Day: </b><span class="day"></span></p>
+        <p><b>Time: </b><span class="time"></span></p>
+      </div> <!--label-->
+    </div> <!--sidebar2-->
+    <div class="sidebar3">
+      <!-- Legend -->
+      <div class="legend">
+        <h4> DISTRICT </h4>
+        <ul class="box1">
+          <li><span class="dot"style='background:red'></span>Center City</li>
+          <li><span class="dot"style='background:green'></span>Bridesburg Kensington</li>
+          <li><span class="dot"style='background:black'></span>Germantown</li>
+          <li><span class="dot"style='background:orange'></span>Northeast</li>
+          <li><span class="dot"style='background:purple'></span>North</li>
+        </ul>
+        <ul class="box2">
+          <li><span class="dot"style='background:gray'></span>Olney Oak Lane</li>
+          <li><span class="dot"style='background:pink'></span>Roxborough Manayunk</li>
+          <li><span class="dot"style='background:blue'></span>South</li>
+          <li><span class="dot"style='background:yellow'></span>Southwest</li>
+          <li><span class="dot"style='background:maroon'></span>West</li>
+        </ul>
+      </div> <!--legend-->
+    </div> <!--sidebar3-->
+
+    <div id="map" class="map"></div>
+
+    <!-- Javascript Imports -->
+  <script src="underscore0.js"></script>
+  <script src="leaflet0.js"></script>
+  <script src="jquery-20.2.0.js"></script>
+  <script src="final.js"></script>
+</body>
+</html>
